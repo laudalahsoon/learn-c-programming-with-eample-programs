@@ -32,7 +32,7 @@ scanf("%s" , &website);
 
 strcat(prefix,website);
 
-	system(prefix); //stdlib function
+	system(prefix); // a function to interact with the os in stdlib header file
 	
 	return 0; //exit code
 
