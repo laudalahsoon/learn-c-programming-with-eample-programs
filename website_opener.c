@@ -4,9 +4,9 @@
 
       USAGE : just provide the correct url of the website 
 
-     Example: Enter website url : www.google.com
-
-      
+*    Example: Enter website url : www.google.com
+*
+*     
 *
 *
 *
@@ -24,14 +24,16 @@
 int main()
 {
 
-char prefix[] = "explorer https://" ;
+char prefix[] = "explorer https://" ; //every argument to 'system()' has this in common
 
-char website[100];
+char website[100]; //character array to hold website address
 printf("Enter wesite url :  ");
 scanf("%s" , &website);
 
 strcat(prefix,website);
 
-	system(prefix);
+	system(prefix); //stdlib function
+	
+	return 0; //exit code
 
 }
